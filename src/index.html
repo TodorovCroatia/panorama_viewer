@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>pano</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body id="body-container" style="background-color: #444;">
+  <div id="canvas-container" class="canvas-container"></div>
+  <div id="controls-container" class="controls-container hidden">
+    <div class="pano-select">
+      <div id="pano1-button" class="active mode-button">pano1</div>
+      <div id="pano2-button" class="mode-button">pano2</div>
+    </div>
+    <div class="controls-select">
+      <div class="controls-title">mouse controls mode:</div>
+      <div id="drag-button" class="active mode-button">drag</div>
+      <div id="follow-button" class="mode-button">follow</div>
+    </div>
+    <div id="fs-button" class="fullscreen-button"></div>
+  </div>
+</body>
+</html>

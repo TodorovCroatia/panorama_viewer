@@ -1,0 +1,97 @@
+
+body {
+  background-color: #444;
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.canvas-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.controls-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  pointer-events: none;
+
+  .pano-select {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: #444;
+    line-height: 40px;
+    pointer-events: all;
+  }
+
+  .controls-select {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 150px;
+    height: 50px;
+    background-color: #444;
+    padding: 5px 10px;
+
+    .controls-title {
+      position: relative;
+      width: 100%;
+      color: #fff;
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+
+  .mode-button {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    padding: 3px 6px;
+    line-height: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #fff;
+    pointer-events: all;
+    cursor: pointer;
+
+    &.active {
+      border: 2px solid #4e4;
+    }
+  }
+
+  .fullscreen-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 35px;
+    height: 26px;
+    background-color: #fff;
+    border: 4px solid #222;
+    border-radius: 4px;
+    pointer-events: all;
+    cursor: pointer;
+  }
+
+  &.mobile {
+    .fullscreen-button {
+      display: none;
+    }
+
+    .controls-select {
+      display: none;
+    }
+  }
+}
